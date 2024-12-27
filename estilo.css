@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.topo {
+    background-color: rgb(17, 207, 207);
+    width: 100%;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.secao-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao-img img {
+    width: 120px;
+}
+
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.links-topo a:hover {
+    color: rgba(0, 0, 0, 0.629);
+}
+
+.banner {
+    background-image: url('assets/recepcao.png');
+    background-size: cover;
+    width: 100%;
+    height: 69vh;
+}
+
+.txt-banner {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 69vh;
+    font-size: 30px;
+}
+
+.txt-banner h1 {
+    font-weight: 400;
+}
+
+.sobre {
+    color: rgb(128, 128, 128);
+    margin-bottom: 40px;
+}
+
+.sobre-txt {
+    text-align: center;
+    margin: 30px auto 10px auto;
+}
+
+.sobre-txt h2, h3{
+    margin-bottom: 20px;
+}
+
+.sobre-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-cards img {
+    margin-right: 50px;
+}
+
+.sobre-cards-txt h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.container-cards img {
+    width: 300px;
+}
+
+figure {
+    box-shadow: 1px 1px 10px grey;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+.link-horario {
+    margin-top: 40px;
+} 
+
+.link-horario a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    background-color: rgb(17, 207, 207);
+    max-width: 130px;
+    margin-left: 450px;
+    font-weight: 600;
+}
+
+.sobre-txt2 {
+    text-align: center;
+    margin: 30px auto 10px auto;
+}
+
+.sobre-txt2 p{
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(12, 158, 134);
+    height: 230px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.rodape img {
+    width: 120px;
+    margin-top: 20px;
+}
+
+.rodape p{
+    margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+    .topo .secao-topo { flex-direction: column; }
+    .secao-img { margin: 10px 0; }
+    .topo-links { width: 100%; border-top: 1px solid #009fa5; justify-content: space-around;}
+}
+
+@media (min-width: 769px){
+    
+}
+
+@media (max-width: 1024px) {
+    .txt-banner { height: 400px;}
+  }
+  
+  @media (max-width: 768px) {
+    .txt-banner { height: 300px;}
+    .sobre-cards img { display: none;}
+    .container-cards {justify-content: center;}
+    figure {
+      width: calc(100% / 2 - 40px);
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .txt-banner { height: 200px;}
+    .txt-banner h1 { font-size: 28px;}
+    figure {
+      width: 100%;
+    }
+  }
